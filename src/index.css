@@ -1,0 +1,20 @@
+@font-face {
+  font-family: "ZonaProEL";
+  src: url("/fonts/ZonaProEL.otf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "ZonaProB";
+  src: url("/fonts/ZonaProB.otf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+
+body {
+  margin: 0;
+  font-family: "ZonaProEL", sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
