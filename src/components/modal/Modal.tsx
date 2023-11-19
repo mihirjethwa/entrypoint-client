@@ -1,7 +1,6 @@
 import { useEffect } from "react";
 import "../../assets/styles/modal/modal.scss";
-import Close from "../../assets/svg/close.svg";
-import MySVG from "../../assets/svg/Closenew";
+import Close from "../../assets/svg/Close";
 
 type ModalProps = {
   onClose: () => void;
@@ -28,8 +27,7 @@ const Modal: React.FC<ModalProps> = ({ onClose, children }) => {
     <div className='modal-overlay'>
       <div className='modal' id='modal'>
         <div className='close-button' onClick={onClose}>
-          {/* <img src={Close} alt='close' className='close-button-svg' /> */}
-          <MySVG />
+          <Close />
         </div>
         {children}
       </div>

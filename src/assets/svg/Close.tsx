@@ -1,4 +1,4 @@
-const MySVG = () => (
+const Close = () => (
   <svg
     style={{ fill: "#ABB0B8", transition: "fill 0.3s ease-in-out" }}
     width='20'
@@ -13,4 +13,4 @@ const MySVG = () => (
   </svg>
 );
 
-export default MySVG;
+export default Close;
