@@ -45,8 +45,6 @@
 }
 
 .account {
-  width: 200px;
-
   .auth {
     display: flex;
     justify-content: flex-end;
@@ -77,9 +75,12 @@
     display: flex;
     justify-content: flex-end;
     align-items: center;
+    font-size: 14px;
+    font-weight: 900;
 
     &-link {
       margin: 0 16px;
+      cursor: pointer;
     }
     &-signup {
       padding: 4px 10px;
@@ -89,7 +90,79 @@
       align-items: center;
       border-radius: 4px;
       color: $white;
-      font-family: "ZonaProB";
+      cursor: pointer;
     }
+  }
+}
+
+.in {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 0 20px;
+
+  p {
+    margin: 4px 0;
+  }
+
+  form,
+  button,
+  input {
+    width: 100%;
+    box-sizing: border-box;
+  }
+
+  input:focus {
+    border-color: $dark-grey;
+    outline: none;
+  }
+
+  button:hover {
+    cursor: pointer;
+  }
+
+  &-div {
+    margin-bottom: 20px;
+    font-size: 12px;
+    font-weight: 800;
+  }
+  &-input {
+    height: 36px;
+    background-color: $light-grey;
+    border-radius: 4px;
+    padding: 14px;
+    font-size: 16px;
+    border: 0.5px solid $dark-grey;
+    transition: border-color 0.3s ease;
+  }
+
+  &-forgot {
+    display: flex;
+    justify-content: flex-end;
+  }
+
+  &-btn {
+    background-color: $jungle-green;
+    color: $white;
+    border: none;
+    border-radius: 4px;
+    height: 36px;
+  }
+  &-create {
+    padding-top: 10px;
+    display: flex;
+    justify-content: center;
+    span {
+      font-weight: 900;
+      color: $jungle-green;
+    }
+
+    span:hover {
+      cursor: pointer;
+    }
+  }
+  &-error {
+    color: $error;
   }
 }
