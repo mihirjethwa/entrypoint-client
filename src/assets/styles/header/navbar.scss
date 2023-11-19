@@ -1,0 +1,95 @@
+@import "../variables";
+
+.nav {
+  height: 60px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 180px;
+  background-color: $white;
+
+  a {
+    text-decoration: none;
+    color: $black;
+  }
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+
+  &-svg {
+    fill: $jungle-green;
+    width: 40px;
+    height: 100%;
+  }
+
+  &-text {
+    font-family: "ZonaProB";
+    color: $jungle-green;
+    margin-left: 6px;
+    font-size: large;
+  }
+}
+
+.link {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  a {
+    margin: 0 10px;
+    font-weight: 800;
+    font-size: 14px;
+  }
+}
+
+.account {
+  width: 200px;
+
+  .auth {
+    display: flex;
+    justify-content: flex-end;
+
+    &-auth-div {
+      display: flex;
+      align-items: center;
+    }
+
+    &-name {
+      margin: 0 10px;
+      font-weight: 900;
+      font-size: 14px;
+    }
+
+    &-img {
+      width: 30px;
+      height: 30px;
+    }
+    &-bell {
+      width: 30px;
+      height: 30px;
+      margin-left: 10px;
+    }
+  }
+
+  .login {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+
+    &-link {
+      margin: 0 16px;
+    }
+    &-signup {
+      padding: 4px 10px;
+      background-color: $jungle-green;
+      height: 25px;
+      display: flex;
+      align-items: center;
+      border-radius: 4px;
+      color: $white;
+      font-family: "ZonaProB";
+    }
+  }
+}

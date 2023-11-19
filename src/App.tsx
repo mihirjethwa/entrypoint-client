@@ -1,13 +1,18 @@
-import "./App.scss";
+import { BrowserRouter as Router, Route, Link, Routes } from "react-router-dom";
+import Navbar from "./components/header/Navbar";
+import Footer from "./components/footer/Footer";
 
-function App() {
+const App: React.FC = () => {
   return (
-    <>
-      <div className='box'>
-        <p className='box-inner'>Contact</p>
-      </div>
-    </>
+    <Router>
+      <Navbar></Navbar>
+      <Routes>
+        {/* <Route path='/' element={<Footer />} />
+        <Route path='/about' element={<Footer />} /> */}
+      </Routes>
+      <Footer></Footer>
+    </Router>
   );
-}
+};
 
 export default App;

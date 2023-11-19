@@ -1,3 +1,4 @@
+@import "./assets/styles/variables";
 @font-face {
   font-family: "ZonaProEL";
   src: url("/fonts/ZonaProEL.otf") format("truetype");
@@ -17,4 +18,22 @@ body {
   font-family: "ZonaProEL", sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  width: 100vw;
+  height: 100vh;
+  background-color: $dark-grey;
+  color: $black;
+  letter-spacing: 1px;
+}
+p {
+  margin: 0;
+}
+::selection {
+  background-color: $jungle-green;
+  color: $white;
+}
+
+/* For Firefox */
+::-moz-selection {
+  background-color: $jungle-green;
+  color: $white;
 }
